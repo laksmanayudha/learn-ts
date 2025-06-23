@@ -4,5 +4,7 @@ describe('tinkering', () => {
       name: string,
       age: number,
     };
+
+    const helloPerson = ({ a, b }: { a?: string, b?: number } = {}): string => `${a} ${b}`;
   });
 });
