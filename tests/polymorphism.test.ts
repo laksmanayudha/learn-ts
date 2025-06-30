@@ -11,7 +11,7 @@ describe('Polymorphism', () => {
 
   function sayHello(employee: Employee) {
     if (employee instanceof VicePresident) {
-      const vicePresident = employee as VicePresident;
+      const vicePresident = employee as VicePresident; // type cast
       console.log(`Hello Vice Manager ${vicePresident.name}`);
     } else if (employee instanceof Manager) {
       const manager = employee as Manager;
